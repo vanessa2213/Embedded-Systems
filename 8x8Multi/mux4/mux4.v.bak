@@ -1,0 +1,15 @@
+module mux4(mux_in_a,mux_in_b, mux_sel, mux_out);
+
+input [3:0]mux_in_a,mux_in_b;
+input mux_sel;
+output [3:0] mux_out;
+
+always @(mux_in_a, mux_in_b, mux_sel)
+	if(mul_sel == 1'b0)
+		mux_out = mux_in_a;
+	else
+		mux_out = mux_in_b;
+
+end
+
+endmodule 

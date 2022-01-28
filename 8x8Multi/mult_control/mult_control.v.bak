@@ -1,0 +1,156 @@
+module mult_control(clk, reset_a, start, count, input_sel, shift_sel, state_out, done, clk_ena, sclr_n);
+
+input clk, reset_a, start;
+
+input [1:0] count;
+output reg [1:0] input_sel, shift_sel;
+output reg [2:0] state_out;
+output reg       done, clk_ena, sclr_n;
+
+reg [2:0] current_state, next_state;
+
+parameter idle=0, lsb=1, mid=2, msb=3, calc_done=4, err=5;
+
+always @ (posedge clk, posedge reset_a)
+begin
+	if(reset_a)
+		current_state <= idle;
+	else
+		current_state <= next_state;
+
+end
+
+//combinatorial process to determine the next state in the FSM
+
+always @ (start, count, current_state)
+begin
+	next_state <= current_state;
+	case (current_state)
+		idle:
+			begin	
+			if( start)
+				next_state<= lsb;
+			end
+		lsb:
+			begin
+				if(count == 0  && start == 0)
+					next_state <= mid;
+				else
+					next_state <= err;
+			end
+		mid:
+			begin
+				if(count == 2'b01  && start ==0 )
+					next_state <= mid;
+				else if  (count == 2'b10  && start ==0)
+					next_state <= msb;
+				else
+				 next_state <= err;
+			end
+		msb:
+			begin
+				if(count == 2'b11  && start ==0 )
+					next_state <= calc_done;
+				else
+				 next_state <= err;
+			end
+		calc_done:
+			begin
+				if(!start )
+					next_state <= idle;
+				else
+				 next_state <= err;
+			end
+		err:
+			begin
+				if(start )
+					next_state <= lsb;
+				else
+				 next_state <= err;
+			end
+	endcase
+end
+
+//comb for outputs
+always @(current_state, start, count)
+begin
+	//to avoid latches
+	input_sel = 2'bXX;
+	shift_sel = 2'bXX;
+	done      = 1'b0;
+	clk_ena   = 1'b0;
+	sclr_n   = 1'b1;
+	//generate output logic
+	case (current_state)
+		idle:
+			begin	
+			if( start)
+				begin
+					clk_ena = 1;
+					sclr_n  = 0;
+				end
+			end
+		lsb:
+			begin
+				if(count == 0  && start == 0)
+					begin
+						input_sel =  2'b00;
+						shift_sel =  2'b00;
+						clk_ena   =  1;
+					end
+			end
+		mid:
+			begin
+				if(count == 2'b01  && start ==0 )
+					begin
+						input_sel =  2'b01;
+						shift_sel =  2'b01;
+						clk_ena   =  1;
+					end
+				else if  (count == 2'b10  && start ==0)
+					begin
+						input_sel =  2'b10;
+						shift_sel =  2'b01;
+						clk_ena   =  1;
+					end
+			end
+		msb:
+			begin
+				if(count == 2'b10  && start ==0 )
+					 begin
+						input_sel = 2'b11;
+						shift_sel = 2'b10;
+						clk_ena   = 1'b1;
+					 end
+			end
+		calc_done:
+			begin
+				if(!start )
+					done = 1'b1;
+			end
+		err:
+			begin
+				if(start )
+					begin
+					clk_ena = 1'b1;
+					sclr_n  = 1'b0;
+					end
+			end
+	endcase
+	
+end
+
+always @ (current_state)
+begin
+	state_out = 3'b000;
+	case(current_state)
+		idle: ;
+		lsb: state_out = 3'b001;
+		mid: state_out = 3'b010;
+		msb: state_out = 3'b011;
+		calc_done: state_out = 3'b100;
+		err: state_out = 3'b101;
+	endcase
+end
+
+endmodule 
