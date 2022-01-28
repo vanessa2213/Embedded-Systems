@@ -1,0 +1,16 @@
+module mux1b (mux1b_in, out);
+
+input mux1b_in;
+output out;
+
+always @ (one, zero, mux1b_in)
+begin
+	if(mux1b_in)
+		out = 1;
+	else if(!mux1b_in)
+		out = 0;
+	else
+		out = 1'bX;
+end
+	
+endmodule 

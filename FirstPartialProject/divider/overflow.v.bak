@@ -1,0 +1,17 @@
+module overflow (in, out);
+
+input [15:0] in;
+
+output out;
+
+
+always @ (in)
+begin
+	if(in != 16'hOOOO)
+		out = 1;
+	else
+		out = 0;
+end
+
+
+endmodule 

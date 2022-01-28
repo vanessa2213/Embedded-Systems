@@ -1,0 +1,17 @@
+module compare (a, b, out);
+
+input [15:0] a,b;
+
+output reg out;
+
+
+always @ (a,b)
+	begin
+		if ( a >= b)
+			out = 1;
+		else
+			out = 0;
+	
+	end 
+	
+endmodule

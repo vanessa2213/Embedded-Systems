@@ -1,0 +1,41 @@
+module divider(dividen, divisor, start, reset_a, clk, quotient,remainder, done, overflow );
+
+input clk, start, reset_a;
+input [15:0] dividen, divisor;
+output [15:0] quotient, remainder;
+output done, overflow;
+
+wire [7:0]sel_bits;
+wire [3:0] count;
+wire [15:0] out_shift_1,out_shift_2, out_muxin, out_sum, out_rest;
+wire sel_mux1b, add,clk_ena,shift_cntrl_1,shift_cntrl_2,sel_mux_in,goreq, bits, count_done, zero, en_count, sclr_n, overflow_1;
+
+mux1b  u1(.mux1b_in(sel_mux1b), .out(add));
+
+adder  u2(.dataa(quotient), .datab(add), .sum(reg32_in));
+
+reg16  u3(.datain(out_shift_2), .clk(clk), .sclr_n(sclr_n), .clk_ena(clk_ena), .reg_out(quotient));
+
+shifter u4(.inp(quotient), .shift_cntrl(shift_cntrl_2), .shift_out(out_shift_2));
+
+
+mux_in  u5(.mux_in_a(dividen), .mux_in_b(out_sum), .sel_mux_in(sel_mux_in), .out(out_muxin));
+compare u6(.a(divisor), .b(out_muxin), .out(goreq));
+count_bits u7(.in(divisor), .out(bits), .done(count_done));
+
+rest	u8(.bits(bits), .count(count).zero(zero), .in_a(divisor), .in_b(out_sum), .out_rest(out_rest));
+shifter u9(.inp(out_rest), .shift_cntrl(shift_cntrl_1), .shift_out(out_shift_1));
+sum 	  u10(.in_a(out_shift_1), .in_b(dividen), .count(count),.out_sum(out_sum));
+
+reg16  u11(.datain(out_sum), .clk(clk), .sclr_n(sclr_n), .clk_ena(clk_ena), .reg_out(remainder));
+counter u12(.in(count),.en_count(en_count) , .reset_a(reset_a), .out(count));
+
+overflow u13(.in(out_sum), .out(overflow_1));
+reg16  u15(.datain(overflow_1), .clk(clk), .sclr_n(sclr_n), .clk_ena(clk_ena), .reg_out(overflow));
+
+div_control u14(.clk(clk), .goreq(goreq), .start(start), .count_done(count_done), .reset_a(reset_a), 
+					 .bits(bits), .count(count), .done(done), .sel_mux_in(sel_mux_in), .sel_bits(sel_bits), 
+					 .sh_cnt1(shift_cntrl_1), .sh_cnt2(shift_cntrl_2), .sclr_n(sclr_n), .clk_ena(clk_ena), 
+					 .mux1b(sel_mux1b), .en_count(en_count), .zero(zero));
+
+endmodule 

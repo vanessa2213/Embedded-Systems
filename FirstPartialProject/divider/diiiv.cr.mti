@@ -1,0 +1,106 @@
+{C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/shifter.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/shifter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/sum.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/sum.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sum
+
+Top level modules:
+	sum
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/mux1b.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/mux1b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux1b
+
+Top level modules:
+	mux1b
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/rest.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/rest.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module rest
+
+Top level modules:
+	rest
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/compare.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/compare.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module compare
+
+Top level modules:
+	compare
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/divider.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/divider.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/counter.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/counter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/regs.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/regs.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regs
+
+Top level modules:
+	regs
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/count_bits.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/count_bits.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module count_bits
+
+Top level modules:
+	count_bits
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/div_control.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/div_control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module div_control
+
+Top level modules:
+	div_control
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/divider_tb.v} {1 {vlog -work work -stats=none {C:\Users\vane_\Desktop\Sistemas Embebidos\EP1\divider\divider_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module divider_tb
+
+Top level modules:
+	divider_tb
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/overflow.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/overflow.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module overflow
+
+Top level modules:
+	overflow
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/reg16.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/reg16.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg16
+
+Top level modules:
+	reg16
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/adder.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/mux_in.v} {1 {vlog -work work -stats=none {C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/divider/mux_in.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_in
+
+Top level modules:
+	mux_in
+
+} {} {}}

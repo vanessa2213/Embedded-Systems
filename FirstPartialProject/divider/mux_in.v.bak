@@ -1,0 +1,16 @@
+module mux_in (in, ,ena, sel_mux_in,out_mux_in);
+
+input ena;
+input [4:0] sel_mux_in;
+input [31:0] in;
+output reg [sel_mux_in-1:0]out_mux_in;
+
+always @ (ena, in)
+begin
+	if(ena)
+		out_mux_in = [sel_mux_in-1:0] in;
+	else 
+		out_mux_in = 32'hXXXX_XXXX;
+end
+
+assign 

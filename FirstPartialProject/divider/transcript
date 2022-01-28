@@ -1,0 +1,399 @@
+# Compile of sum.v was successful.
+# Compile of adder.v was successful.
+# Compile of adder_div.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_control.v was successful.
+# Compile of alu_top.v was successful.
+# Compile of alu_top_tb.v was successful.
+# Compile of compare.v was successful.
+# Compile of count_bits.v was successful.
+# Compile of counter.v was successful.
+# Compile of counter_div.v was successful.
+# Compile of div_control.v was successful.
+# Compile of divider.v was successful.
+# Compile of divider_tb.v was successful.
+# Compile of mult_control.v was successful.
+# Compile of mult4x4.v was successful.
+# Compile of multi16x16.v was successful.
+# Compile of multi16x16_tb.v was successful.
+# Compile of mux_in.v was successful.
+# Compile of mux1b.v was successful.
+# Compile of mux4.v was successful.
+# Compile of overflow.v was successful.
+# Compile of reg16.v was successful.
+# Compile of reg16_div.v was successful.
+# Compile of regs.v was successful.
+# Compile of rest.v was successful.
+# Compile of seven_segment_cntrl.v was successful.
+# Compile of shifter.v was successful.
+# Compile of shifter_div.v was successful.
+# 29 compiles, 0 failed with no errors.
+vsim work.alu_top_tb
+# vsim work.alu_top_tb 
+# Start time: 22:45:56 on Sep 19,2020
+# Loading work.alu_top_tb
+# Loading work.alu_top
+# Loading work.alu
+# Loading work.multi16x16
+# Loading work.mux4
+# Loading work.mult4x4
+# Loading work.mult_control
+# Loading work.counter
+# Loading work.shifter
+# Loading work.adder
+# Loading work.reg16
+# Loading work.seven_segment_cntrl
+# Loading work.divider
+# Loading work.mux1b
+# Loading work.adder_div
+# Loading work.reg16_div
+# Loading work.shifter_div
+# Loading work.mux_in
+# Loading work.compare
+# Loading work.count_bits
+# Loading work.rest
+# Loading work.sum
+# Loading work.counter_div
+# Loading work.overflow
+# Loading work.div_control
+# Loading work.regs
+# Loading work.alu_control
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Too few port connections. Expected 14, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_a'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_b'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_c'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_d'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_e'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_f'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_g'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'dataa'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'datab'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'sum'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'remainder'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'datain'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'reg_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_top.v(13): [PCDPC] - Port size (2) does not match connection size (1) for port 'state_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v
+add wave sim:/alu_top_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave sim:/alu_top_tb/alu_top_1/u1/u2/*
+restart
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Too few port connections. Expected 14, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_a'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_b'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_c'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_d'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_e'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_f'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_g'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'dataa'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'datab'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'sum'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'remainder'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'datain'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'reg_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_top.v(13): [PCDPC] - Port size (2) does not match connection size (1) for port 'state_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of alu_top_tb.v was successful.
+restart
+# Loading work.alu_top_tb
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Too few port connections. Expected 14, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_a'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_b'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_c'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_d'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_e'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_f'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_g'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'dataa'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'datab'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'sum'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'remainder'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'datain'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'reg_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_top.v(13): [PCDPC] - Port size (2) does not match connection size (1) for port 'state_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Too few port connections. Expected 14, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_a'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_b'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_c'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_d'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_e'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_f'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_g'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'dataa'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'datab'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v(31): [PCDPC] - Port size (16) does not match connection size (32) for port 'sum'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1/a1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/adder.v
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'remainder'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'datain'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'reg_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_top.v(13): [PCDPC] - Port size (2) does not match connection size (1) for port 'state_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v
+add wave sim:/alu_top_tb/alu_top_1/u1/u1/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of adder.v was successful.
+restart
+# Loading work.adder
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Too few port connections. Expected 14, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u1 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/multi16x16.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_a'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_b'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_c'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_d'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_e'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_f'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(33): [TFMPC] - Missing connection for port 'seg_g'.
+# ** Warning: (vsim-3017) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'remainder'.
+# ** Warning: (vsim-3722) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu.v(34): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'datain'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/divider.v(33): [PCDPC] - Port size (32) does not match connection size (16) for port 'reg_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u1/u2/u11 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/reg16.v
+# ** Warning: (vsim-3015) C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_top.v(13): [PCDPC] - Port size (2) does not match connection size (1) for port 'state_out'. The port definition is at: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top_tb/alu_top_1/u2 File: C:/Users/vane_/Desktop/Sistemas Embebidos/EP1/ALU/alu_control.v
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 00:13:52 on Sep 20,2020, Elapsed time: 1:27:56
+# Errors: 0, Warnings: 82
