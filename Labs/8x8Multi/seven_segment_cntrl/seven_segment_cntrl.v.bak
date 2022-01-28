@@ -1,0 +1,59 @@
+module seven_segment_cntrl(inp, seg_a, seg_b, seg_c, seg_d, seg_e,seg_f, seg_g);
+
+input [2:0]inp;
+output reg seg_a, seg_b, seg_c, seg_d,seg_e, seg_f, seg_g;
+
+always @(inp)
+begin
+	case (inp)
+		3'b000: 	begin
+					seg_a = 1;
+					seg_b = 1;
+					seg_c = 1; 
+					seg_d = 1;
+					seg_e = 1; 
+					seg_f = 1; 
+					seg_g = 0;
+					end
+		3'b001: 	begin
+					seg_a = 0;
+					seg_b = 1;
+					seg_c = 1; 
+					seg_d = 0;
+					seg_e = 0; 
+					seg_f = 0; 
+					seg_g = 0;
+					end
+		3'b010: 	begin
+					seg_a = 1;
+					seg_b = 1;
+					seg_c = 0; 
+					seg_d = 1;
+					seg_e = 1; 
+					seg_f = 0; 
+					seg_g = 1;
+					end
+		3'b011: 	begin
+					seg_a = 1;
+					seg_b = 1;
+					seg_c = 1; 
+					seg_d = 1;
+					seg_e = 0; 
+					seg_f = 0; 
+					seg_g = 1;
+					end
+					
+		default: begin
+					seg_a = 1;
+					seg_b = 0;
+					seg_c = 0; 
+					seg_d = 1;
+					seg_e = 1; 
+					seg_f = 1; 
+					seg_g = 1;
+					end
+	endcase
+		
+end
+
+endmodule 
